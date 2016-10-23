@@ -1,8 +1,25 @@
+body {
+	margin: 0;
+}
 .carousel-widget{
+	position: relative;
 }
 
-.carousel-btn-next { 
-	/*display: block;*/
+.carousel-btn-next, .carousel-btn-auto { 
+	height: 50px;
+	width: 80px;
+    background: black;
+    color: white;
+    border: 0;
+}
+
+.carousel-btn-auto {
+	border-radius: 0 20px 20px 0;
+	background: blue;
+}
+
+.carousel-btn-next {
+	border-radius: 20px 0px 0px 20px;
 }
 
 .opacity-image {
@@ -24,7 +41,11 @@
 }
 
 .carousel-controls {
+	position: absolute;
 	text-align: center;
+	top: 5vh;
+	left: 50%;
+    transform: translateX(-50%);
 }
 
 .carousel-controls, .carousel-image {
@@ -32,9 +53,11 @@
 }
 
 .carousel-image {
-	width: 500px;
-	height: 500px;
+	width: 50vw;
+	height: 100vh;
 	position: relative;
+	border-right: 10px dotted black;
+    border-left: 10px dotted blue;
 }
 
 
