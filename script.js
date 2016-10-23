@@ -17,7 +17,7 @@ domReady(function() {
 		if (timer == null) {
 			timer = setInterval(function() { 
 				nextImage(); 
-			}, 50);
+			}, 10);
 		} else {
 			stopTimer();
 		}

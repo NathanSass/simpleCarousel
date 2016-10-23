@@ -5,6 +5,24 @@
 	/*display: block;*/
 }
 
+.opacity-image {
+	position: absolute;
+	background-image: url('https://upload.wikimedia.org/wikipedia/commons/3/32/Bee-apis.jpg');
+	top: 0;
+	left: 0;
+	opacity: 0.1;
+	transition: opacity 0.5s;
+}
+
+.opacity-image:hover {
+	opacity: 0.5;
+}
+
+.carousel-color, .opacity-image {
+	height: 100%;
+	width: 100%;
+}
+
 .carousel-controls {
 	text-align: center;
 }
@@ -16,5 +34,22 @@
 .carousel-image {
 	width: 500px;
 	height: 500px;
-	/*background: red;*/
+	position: relative;
+}
+
+
+.col-6 {
+	width: 45%;
+}
+
+.row {
+	display: inline-block;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.text-right {
+	text-align: right;
 }
